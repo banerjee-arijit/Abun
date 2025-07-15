@@ -29,7 +29,6 @@ const Navbar = ({ scrollY, activeSection, scrollToSection }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Enhanced Logo */}
           <div className="flex items-center space-x-3 group cursor-pointer">
             <div className="relative">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 group-hover:rotate-12">
@@ -47,7 +46,6 @@ const Navbar = ({ scrollY, activeSection, scrollToSection }) => {
             </div>
           </div>
 
-          {/* Advanced Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <button
@@ -67,7 +65,6 @@ const Navbar = ({ scrollY, activeSection, scrollToSection }) => {
               </button>
             ))}
 
-            {/* Advanced CTA Button */}
             <div className="ml-6 flex items-center space-x-9">
               <button className="text-slate-300 hover:text-white transition-colors text-sm font-medium">
                 Sign In
@@ -83,7 +80,6 @@ const Navbar = ({ scrollY, activeSection, scrollToSection }) => {
             </div>
           </div>
 
-          {/* Enhanced Mobile menu button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -111,7 +107,6 @@ const Navbar = ({ scrollY, activeSection, scrollToSection }) => {
         </div>
       </div>
 
-      {/* Enhanced Mobile Navigation */}
       <div
         className={`lg:hidden transition-all duration-500 overflow-hidden ${
           isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

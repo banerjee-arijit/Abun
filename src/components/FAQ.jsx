@@ -144,7 +144,6 @@ const FAQ = () => {
           ))}
         </div>
 
-        {/* FAQ Footer */}
         <div className="mt-12 text-center">
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6">
             <div className="flex items-center justify-center space-x-3 mb-4">

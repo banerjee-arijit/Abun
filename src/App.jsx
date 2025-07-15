@@ -1,57 +1,25 @@
 import React, { useState, useEffect } from "react";
 import {
-  ArrowRight,
   Sparkles,
-  Zap,
   Target,
-  Users,
-  CheckCircle,
-  Star,
-  ChevronDown,
   Play,
-  Quote,
-  Menu,
   X,
-  Lightbulb,
-  Search,
-  FileText,
   BarChart3,
-  Globe,
-  Mail,
-  Twitter,
-  Linkedin,
-  Github,
-  Code,
-  Cpu,
-  Brain,
-  Rocket,
-  Shield,
-  Clock,
-  TrendingUp,
-  Award,
-  Layers,
-  MousePointer,
-  Eye,
-  Headphones,
   MessageCircle,
-  Plus,
-  Minus,
 } from "lucide-react";
 import Navbar from "./components/Navbar";
-import Herosection from "./Herosection";
-import HowItWorks from "./HowItWorks";
-import Features from "./Features";
-import LiveDemo from "./LiveDemo";
-import Pricing from "./Pricing";
-import Testimonials from "./Testimonials";
-import FAQ from "./FAQ";
-import FinalCTA from "./FinalCTA";
-import Footer from "./Footer";
+import Herosection from "./components/Herosection";
+import HowItWorks from "./components/HowItWorks";
+import Features from "./components/Features";
+import LiveDemo from "./components/LiveDemo";
+import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import FinalCTA from "./components/FinalCTA";
+import Footer from "./components/Footer";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isYearly, setIsYearly] = useState(false);
-  const [openFaq, setOpenFaq] = useState(null);
   const [activeSection, setActiveSection] = useState("hero");
   const [scrollY, setScrollY] = useState(0);
   const [heroText, setHeroText] = useState("");
@@ -103,7 +71,6 @@ function App() {
     };
   }, []);
 
-  // Animate the dot to follow the mouse with a trailing effect
   useEffect(() => {
     let frame;
     const animate = () => {
@@ -121,7 +88,6 @@ function App() {
     return () => cancelAnimationFrame(frame);
   }, [mouse]);
 
-  // Typing animation effect
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -155,7 +121,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
-      {/* Mouse-following animated dot */}
       <div
         className="pointer-events-none fixed z-50"
         style={{
