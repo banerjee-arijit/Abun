@@ -27,7 +27,6 @@ const FAQ = () => {
             Everything you need to know about Abun
           </p>
 
-          {/* FAQ Categories */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {["General", "Features", "Pricing", "Technical"].map((category) => (
               <button
